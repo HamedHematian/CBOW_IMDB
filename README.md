@@ -1,11 +1,11 @@
 # CBOW_IMDB
 **CBOW Training for IMDB Review Classification** In this project, we implement the classification of IMDB Reviews using a LSTM. We examine two methods:
-  - Classification w/ Random Vectors
-  - Classification w/ CBOW vectors
+  - Classification w/ CBOW Vectors
+  - Classification w/ GLOVE vectors
 
-For the second one, we first train a CBOW, and then use its pre-trained vectors to initialize the word embedding layer of the LSTM.
+For the second one, we first train a CBOW, and then use its pre-trained vectors to initialize the word embedding layer of the LSTM. For the later, pre-trained 6B GLOVE vectors are loaded.
 
-| <center>Header 1</center> | <center>Header 2</center> |
+| | <center>Accuracy</center> |
 |:--------------------------:|:--------------------------:|
-| <center>Row 1, Col 1</center> | <center>Row 1, Col 2</center> |
-| <center>Row 2, Col 1</center> | <center>Row 2, Col 2</center> |
+| <center>Classification w/ Pre-trained CBOW</center> | <center>71.75</center> |
+| <center>Classification w/ Pre-trained GLOVE</center> | <center>75.08</center> |
